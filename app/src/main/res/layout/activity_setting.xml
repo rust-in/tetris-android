@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F0B1"
+    android:orientation="vertical"
+    tools:context="com.example.asus.tetris.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:gravity="center_vertical|center"
+            android:layout_height="match_parent"
+            android:text="音乐"
+            />
+
+        <CheckBox
+            android:id="@+id/checkbox_music"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/checkbox_selector"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:gravity="center_vertical|center"
+            android:layout_height="match_parent"
+            android:text="音效"
+            />
+
+        <CheckBox
+            android:id="@+id/checkbox_sound"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/checkbox_selector"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.055"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.015"
+        android:background="#996633"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.055"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/radio_practice"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="练习模式"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="match_parent"/>
+        <RadioButton
+            android:id="@+id/radio_challenge"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="挑战模式"
+            />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.075"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/speed_set"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="请选择初始速度"
+            />
+
+        <TextView
+            android:id="@+id/textview_speed"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="Lv.0"
+            >
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_difficulty"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        >
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="请选择挑战难度"
+            />
+
+        <TextView
+            android:id="@+id/textview_level"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="Lv.9"
+            >
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"
+        />
+
+    <TextView
+        android:id="@+id/visible"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:textColor="#666600"
+        android:textSize="20sp"
+        android:text="*每获得2000分,速度++"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        />
+</LinearLayout>

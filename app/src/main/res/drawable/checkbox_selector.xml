@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/on"
+        android:drawableEnd="@drawable/on"
+        android:drawableRight="@drawable/on"
+        android:state_checked="true"
+        />
+
+    <item
+        android:drawable="@drawable/off"
+        android:drawableEnd="@drawable/off"
+        android:drawableRight="@drawable/off"
+        android:state_checked="false"
+        />
+
+</selector>
